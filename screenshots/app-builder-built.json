@@ -1,0 +1,41 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Carters Care",
+      "hasCanvas": false,
+      "bodyTextLen": 433,
+      "bodyTextHash": "60ce5ceab78c31367260e6e21f646f1e5f34da0fe9e2b5abf8e25e2eca9c6cb7",
+      "bodyTextPrefix": "Carters Care Care Management Platform Streamline your NDIS and a",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Carters Care",
+      "hasCanvas": false,
+      "bodyTextLen": 231,
+      "bodyTextHash": "521f234f2a9665db52682f8a7d59e241488e4e62dab29ecd993d7ca1e0ba1802",
+      "bodyTextPrefix": "Staff Login Client Portal Welcome back Choose a desk to enter th",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: body text changed (660 -> 433 chars, hash mismatch)",
+    "mobile: body text changed (458 -> 231 chars, hash mismatch)"
+  ]
+}

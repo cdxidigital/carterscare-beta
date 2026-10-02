@@ -1,0 +1,1 @@
+import{T as e}from"./session-C7Yex4aw.js";import{u as t}from"./screens-DGg3punH.js";import{a as n}from"./index-BBZDcZgR.js";var r=e(),i=function(){let{incidentId:e}=n.useParams();return(0,r.jsx)(t,{incidentId:e})};export{i as component};

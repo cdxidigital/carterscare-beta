@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f4f6fa;
+  --color-surface: #ffffff;
+  --color-fg: #1a1a24;
+  --color-muted: #6b6b7a;
+  --color-subtle: #9292a0;
+  --color-primary: #8c34b2;
+  --color-primary-fg: #ffffff;
+  --color-primary-soft: #f4ebfa;
+  --color-accent: #3b8fd9;
+  --color-border: #dce2ea;
+  --color-ok: #309d5c;
+  --color-ok-bg: #ecfdf3;
+  --color-warn: #e08a12;
+  --color-warn-bg: #fff7ed;
+  --color-bad: #dc2626;
+  --color-bad-bg: #fef2f2;
+  --color-info: #2080c7;
+  --color-info-bg: #eff6ff;
+  --color-portal: #0f9d8a;
+  --color-portal-fg: #ffffff;
+  --color-portal-soft: #e6fbf6;
+  --color-staff-tab: #7c3aed;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --shadow-card: 0 1px 3px hsl(220 15% 50% / 0.08), 0 1px 2px -1px hsl(220 15% 50% / 0.06);
+  --shadow-elevated: 0 8px 24px -8px hsl(220 15% 40% / 0.16), 0 2px 8px -2px hsl(220 15% 40% / 0.08);
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  html,
+  body,
+  #app {
+    min-height: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .login-wash {
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 30%, #dbeafe 70%, #e0f2fe 100%);
+  }
+  .hero-blob-purple {
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  }
+  .hero-blob-blue {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  }
+  .hero-blob-green {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+  }
+  .brand-bar {
+    background: linear-gradient(90deg, #8b5cf6, #60a5fa, #4ade80);
+  }
+  .brand-care-text {
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .btn-staff {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  }
+  .btn-portal {
+    background: linear-gradient(135deg, #14b8a6, #0891b2);
+  }
+  .demo-admin {
+    background: linear-gradient(to bottom right, #a855f7, #8b5cf6);
+  }
+  .demo-manager {
+    background: linear-gradient(to bottom right, #3b82f6, #06b6d4);
+  }
+  .demo-worker {
+    background: linear-gradient(to bottom right, #14b8a6, #22c55e);
+  }
+  .demo-client {
+    background: linear-gradient(to bottom right, #ec4899, #f43f5e);
+  }
+  .qa-clients {
+    background: linear-gradient(to right, #14b8a6, #06b6d4);
+  }
+  .qa-roster {
+    background: linear-gradient(to right, #fb923c, #f59e0b);
+  }
+  .qa-timesheets {
+    background: linear-gradient(to right, #fbbf24, #f59e0b);
+  }
+  .qa-notes {
+    background: linear-gradient(to right, #60a5fa, #6366f1);
+  }
+  .avatar-grad {
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  }
+  .icon-purple {
+    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  }
+  .icon-teal {
+    background: linear-gradient(135deg, #2dd4bf, #14b8a6);
+  }
+  .icon-blue {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  }
+  .icon-yellow {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  }
+  .icon-red {
+    background: linear-gradient(135deg, #f87171, #ef4444);
+  }
+  .icon-green {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+  }
+  .icon-orange {
+    background: linear-gradient(135deg, #fb923c, #f97316);
+  }
+  .icon-indigo {
+    background: linear-gradient(135deg, #818cf8, #6366f1);
+  }
+  .icon-slate {
+    background: linear-gradient(135deg, #94a3b8, #64748b);
+  }
+  .portal-wash {
+    background: linear-gradient(135deg, #f0fdfa 0%, #e6fffa 40%, #f0fdf4 100%);
+  }
+  .portal-banner {
+    background: linear-gradient(135deg, #0d9488, #0891b2);
+  }
+  .portal-cta {
+    background: linear-gradient(135deg, #0d9488, #0891b2);
+  }
+  .stat-grad-blue {
+    background: linear-gradient(to bottom right, #3b82f6, #06b6d4);
+  }
+  .stat-grad-purple {
+    background: linear-gradient(to bottom right, #a855f7, #8b5cf6);
+  }
+  .stat-grad-teal {
+    background: linear-gradient(to bottom right, #14b8a6, #06b6d4);
+  }
+  .date-chip {
+    background: #eff6ff;
+    border-color: #dbeafe;
+    color: #1d4ed8;
+  }
+  .portal-tabs-sticky {
+    top: 4.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}

@@ -1,0 +1,1 @@
+import{N as e}from"./screens-DGg3punH.js";var t=e;export{t as component};

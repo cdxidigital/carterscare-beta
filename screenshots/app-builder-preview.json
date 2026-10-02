@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Carters Care",
+      "hasCanvas": false,
+      "bodyTextLen": 660,
+      "bodyTextHash": "6eba8e855766c0c3afbd48be532db43dfa35c653544a9a8ead36de1c5e4d366b",
+      "bodyTextPrefix": "Carters Care Care Management Platform Streamline your NDIS and a",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Carters Care",
+      "hasCanvas": false,
+      "bodyTextLen": 458,
+      "bodyTextHash": "8ee521c742e2fb7a731065ad51651c0cc3cc0fa9441ed84f3866fb3a45186c54",
+      "bodyTextPrefix": "Staff Login Client Portal Welcome back Sign in to your Carters C",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
