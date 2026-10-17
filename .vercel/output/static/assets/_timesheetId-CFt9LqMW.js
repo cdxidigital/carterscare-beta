@@ -1,1 +1,0 @@
-import{T as e}from"./session-C7Yex4aw.js";import{M as t}from"./screens-DGg3punH.js";import{t as n}from"./index-BBZDcZgR.js";var r=e(),i=function(){let{timesheetId:e}=n.useParams();return(0,r.jsx)(t,{timesheetId:e})};export{i as component};

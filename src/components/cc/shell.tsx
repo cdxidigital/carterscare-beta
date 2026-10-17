@@ -145,10 +145,10 @@ export function AppShell() {
         <header className="sticky top-0 z-20 border-b border-portal/15 bg-surface/80 backdrop-blur-md">
           <div className="mx-auto flex max-w-2xl items-center justify-between gap-3 px-4 py-4">
             <Link to="/client-portal" className="flex items-center gap-3">
-              <img src="/brand/icon.png" alt="" className="size-10 rounded-lg shadow-(--shadow-card)" />
+              <img src="/brand/mark.svg?v=3" alt="" className="size-10" />
               <span>
                 <span className="flex items-center gap-1.5">
-                  <span className="text-base font-bold">My Care Portal</span>
+                  <span className="text-base font-black tracking-tight">Carters<span className="text-primary">Care</span></span>
                   <span className="rounded-full bg-portal-soft px-1.5 py-0.5 text-[10px] font-bold text-portal">DEMO</span>
                 </span>
                 <span className="block text-xs text-muted">Hello, {hello}</span>
@@ -174,8 +174,8 @@ export function AppShell() {
     <div className="min-h-svh bg-bg lg:grid lg:grid-cols-[240px_1fr]">
       <header className="flex items-center justify-between border-b border-border bg-surface px-4 py-3 lg:hidden">
         <div className="flex items-center gap-2">
-          <img src="/brand/icon.png" alt="" className="size-9" />
-          <strong className="text-sm">Carters Care</strong>
+          <img src="/brand/mark.svg?v=3" alt="" className="size-9" />
+          <strong className="text-sm font-black tracking-tight">Carters<span className="text-primary">Care</span></strong>
         </div>
         <button type="button" className="rounded-md border border-border p-2" onClick={() => setOpen((v) => !v)} aria-label="Menu">
           {open ? <X size={18} /> : <Menu size={18} />}
@@ -186,10 +186,10 @@ export function AppShell() {
         data-testid="app-sidebar"
       >
         <div className="hidden items-center gap-3 border-b border-border px-4 py-4 lg:flex">
-          <img src="/brand/icon.png" alt="Carters Care" className="size-14" />
+          <img src="/brand/mark.svg?v=3" alt="" className="size-12" />
           <div className="leading-tight">
-            <p className="text-lg font-bold text-fg">Carters Care</p>
-            <p className="text-[11px] font-medium tracking-wider text-subtle uppercase">Platform</p>
+            <p className="text-lg font-black tracking-tight text-fg">Carters<span className="text-primary">Care</span></p>
+            <p className="mt-0.5 text-[11px] font-semibold text-subtle">More room for care.</p>
           </div>
         </div>
         <nav className="flex-1 space-y-1 overflow-auto py-2">

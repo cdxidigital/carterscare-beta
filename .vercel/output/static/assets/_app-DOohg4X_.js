@@ -1,1 +1,0 @@
-import{t as e}from"./shell-D1WvSewN.js";var t=e;export{t as component};

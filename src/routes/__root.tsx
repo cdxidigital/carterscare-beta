@@ -5,7 +5,7 @@ import { SessionProvider, useSession } from "@/lib/cc/session";
 import { homeFor } from "@/lib/cc/nav";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Carters Care";
+const APP_NAME = "CartersCare";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -13,7 +13,7 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: APP_NAME },
-      { name: "theme-color", content: "#8c34b2" },
+      { name: "theme-color", content: "#9B188F" },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
@@ -24,7 +24,7 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap",
       },
     ],
   }),

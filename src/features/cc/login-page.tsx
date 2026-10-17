@@ -99,32 +99,38 @@ export function LoginPage() {
         <div className="hero-blob-purple absolute -top-20 -left-20 size-72 rounded-full opacity-20" />
         <div className="hero-blob-blue absolute -right-20 -bottom-20 size-96 rounded-full opacity-15" />
         <div className="hero-blob-green absolute top-1/2 left-1/3 size-48 rounded-full opacity-10" />
-        <div className="relative z-10 max-w-md text-center">
-          <div className="mb-8 flex items-center justify-center gap-4">
-            <img src="/brand/icon.png" alt="" className="size-28 rounded-2xl shadow-(--shadow-elevated)" />
-            <div className="text-left">
-              <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-fg">Carters</h1>
-              <p className="brand-care-text text-5xl font-extrabold leading-tight tracking-tight">Care</p>
-            </div>
+        <div className="relative z-10 max-w-lg">
+          <div className="mb-8 flex items-center gap-3">
+            <img src="/brand/mark.svg?v=3" alt="" className="h-20 w-20" />
+            <p className="text-4xl leading-none font-black tracking-tight text-fg">
+              Carters<span className="text-primary">Care</span>
+            </p>
           </div>
-          <h2 className="mb-4 text-2xl font-bold text-fg">Care Management Platform</h2>
-          <p className="leading-relaxed text-muted">
-            Streamline your NDIS and aged care operations — rostering, compliance, incidents, timesheets and more.
+          <h1 className="text-4xl leading-tight font-black tracking-tight text-fg">
+            More room for care<span className="text-primary">.</span>
+          </h1>
+          <p className="mt-3 text-lg font-semibold text-muted">Care management, connected.</p>
+          <p className="mt-4 max-w-md leading-relaxed text-muted">
+            Rostering, compliance, incidents and timesheets for NDIS and aged care — one connected floor.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-2">
+          <div className="mt-8 flex flex-wrap gap-2">
             {["Rostering", "Compliance", "Case Notes", "Timesheets", "Incidents", "Reports"].map((f) => (
-              <span key={f} className="rounded-full border border-surface/80 bg-surface/60 px-3 py-1.5 text-xs font-semibold text-muted shadow-(--shadow-card)">
+              <span key={f} className="rounded-full border border-border/80 bg-surface/80 px-3 py-1.5 text-xs font-semibold text-muted shadow-(--shadow-card)">
                 {f}
               </span>
             ))}
           </div>
+          <p className="mt-8 text-xs font-semibold tracking-wide text-subtle">A Carters Care Group platform</p>
         </div>
       </section>
 
       <section className="flex min-h-0 flex-1 justify-center overflow-y-auto p-4 py-8 sm:p-6">
         <div className="w-full max-w-sm">
-          <div className="mb-8 text-center lg:hidden">
-            <img src="/brand/logo.png" alt="Carters Care Group" className="mx-auto h-14" />
+          <div className="mb-6 flex items-center justify-center gap-2 lg:hidden">
+            <img src="/brand/mark.svg?v=3" alt="" className="h-12 w-12" />
+            <p className="text-2xl leading-none font-black tracking-tight text-fg">
+              Carters<span className="text-primary">Care</span>
+            </p>
           </div>
           <div className="overflow-hidden rounded-xl border border-surface/80 bg-surface shadow-(--shadow-elevated)" data-testid="login-card">
             <div className="brand-bar h-2" />

@@ -352,8 +352,8 @@ export function ClientPortalScreen() {
       ) : null}
 
       <footer className="mt-8 border-t border-portal/15 pt-6 text-center">
-        <img src="/brand/icon.png" alt="" className="mx-auto mb-2 size-8 rounded-md opacity-40" />
-        <p className="text-xs text-subtle">Carters Care Client Portal · Secure access</p>
+        <img src="/brand/mark.svg?v=3" alt="" className="mx-auto mb-2 size-8 opacity-70" />
+        <p className="text-xs text-subtle">CartersCare client portal · Secure access</p>
         <p className="mt-1 text-xs text-subtle">Need help? Call us or contact your care coordinator.</p>
       </footer>
     </div>

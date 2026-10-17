@@ -1,0 +1,1 @@
+import{t as e}from"./shell-CQtl4kLe.js";var t=e;export{t as component};

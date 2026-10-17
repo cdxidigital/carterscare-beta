@@ -1,36 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #f4f6fa;
+  --color-bg: #fcf9f5;
   --color-surface: #ffffff;
-  --color-fg: #1a1a24;
-  --color-muted: #6b6b7a;
-  --color-subtle: #9292a0;
-  --color-primary: #8c34b2;
+  --color-fg: #2d1636;
+  --color-muted: #6e5a73;
+  --color-subtle: #9a879c;
+  --color-primary: #9b188f;
   --color-primary-fg: #ffffff;
-  --color-primary-soft: #f4ebfa;
-  --color-accent: #3b8fd9;
-  --color-border: #dce2ea;
-  --color-ok: #309d5c;
-  --color-ok-bg: #ecfdf3;
-  --color-warn: #e08a12;
-  --color-warn-bg: #fff7ed;
-  --color-bad: #dc2626;
-  --color-bad-bg: #fef2f2;
-  --color-info: #2080c7;
-  --color-info-bg: #eff6ff;
-  --color-portal: #0f9d8a;
+  --color-primary-soft: #f8e8f6;
+  --color-accent: #2aa6d8;
+  --color-border: #e8dfd6;
+  --color-ok: #3f7a1c;
+  --color-ok-bg: #f1f8e8;
+  --color-warn: #b8860b;
+  --color-warn-bg: #fff6e6;
+  --color-bad: #c62828;
+  --color-bad-bg: #fdecec;
+  --color-info: #1578a4;
+  --color-info-bg: #e7f6fc;
+  --color-portal: #1578a4;
   --color-portal-fg: #ffffff;
-  --color-portal-soft: #e6fbf6;
-  --color-staff-tab: #7c3aed;
+  --color-portal-soft: #e7f6fc;
+  --color-staff-tab: #9b188f;
   --radius-xs: 4px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
-  --font-sans: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
-  --shadow-card: 0 1px 3px hsl(220 15% 50% / 0.08), 0 1px 2px -1px hsl(220 15% 50% / 0.06);
-  --shadow-elevated: 0 8px 24px -8px hsl(220 15% 40% / 0.16), 0 2px 8px -2px hsl(220 15% 40% / 0.08);
+  --font-sans: "Nunito", "Segoe UI", system-ui, sans-serif;
+  --shadow-card: 0 1px 3px hsl(280 30% 28% / 0.08), 0 1px 2px -1px hsl(280 30% 28% / 0.06);
+  --shadow-elevated: 0 12px 32px -12px hsl(280 40% 22% / 0.2), 0 2px 8px -2px hsl(280 30% 28% / 0.08);
 }
 
 @layer base {
@@ -48,7 +48,8 @@
     background: var(--color-bg);
     color: var(--color-fg);
     font-family: var(--font-sans);
-    line-height: 1.5;
+    line-height: 1.55;
+    letter-spacing: 0.01em;
   }
   a {
     color: inherit;
@@ -58,108 +59,108 @@
 
 @layer components {
   .login-wash {
-    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 30%, #dbeafe 70%, #e0f2fe 100%);
+    background:
+      radial-gradient(ellipse at 8% 18%, #f6d4f1 0%, transparent 46%),
+      radial-gradient(ellipse at 92% 86%, #cfeaf6 0%, transparent 42%),
+      radial-gradient(ellipse at 78% 8%, #e7f4cf 0%, transparent 40%),
+      #fcf9f5;
   }
   .hero-blob-purple {
-    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+    background: #e7b6e2;
   }
   .hero-blob-blue {
-    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    background: #b7e3f5;
   }
   .hero-blob-green {
-    background: linear-gradient(135deg, #4ade80, #22c55e);
+    background: #d5eeb4;
   }
   .brand-bar {
-    background: linear-gradient(90deg, #8b5cf6, #60a5fa, #4ade80);
-  }
-  .brand-care-text {
-    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    background: linear-gradient(90deg, #9b188f, #2aa6d8 42%, #f5b400 68%, #83bd42);
   }
   .btn-staff {
-    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    background: #9b188f;
   }
   .btn-portal {
-    background: linear-gradient(135deg, #14b8a6, #0891b2);
+    background: #1578a4;
   }
   .demo-admin {
-    background: linear-gradient(to bottom right, #a855f7, #8b5cf6);
+    background: #9b188f;
   }
   .demo-manager {
-    background: linear-gradient(to bottom right, #3b82f6, #06b6d4);
+    background: linear-gradient(135deg, #1a8fbf, #1578a4);
   }
   .demo-worker {
-    background: linear-gradient(to bottom right, #14b8a6, #22c55e);
+    background: linear-gradient(135deg, #6aaa32, #3f7a1c);
   }
   .demo-client {
-    background: linear-gradient(to bottom right, #ec4899, #f43f5e);
+    background: #2d1636;
   }
   .qa-clients {
-    background: linear-gradient(to right, #14b8a6, #06b6d4);
+    background: linear-gradient(90deg, #6aaa32, #3f7a1c);
   }
   .qa-roster {
-    background: linear-gradient(to right, #fb923c, #f59e0b);
+    background: linear-gradient(90deg, #e0a31a, #b8860b);
   }
   .qa-timesheets {
-    background: linear-gradient(to right, #fbbf24, #f59e0b);
+    background: linear-gradient(90deg, #2aa6d8, #1578a4);
   }
   .qa-notes {
-    background: linear-gradient(to right, #60a5fa, #6366f1);
+    background: linear-gradient(90deg, #c43aa3, #9b188f);
   }
   .avatar-grad {
-    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+    background: linear-gradient(135deg, #c43aa3, #9b188f);
   }
   .icon-purple {
-    background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+    background: linear-gradient(135deg, #c43aa3, #9b188f);
   }
   .icon-teal {
-    background: linear-gradient(135deg, #2dd4bf, #14b8a6);
+    background: linear-gradient(135deg, #2ec4b6, #0f8f86);
   }
   .icon-blue {
-    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    background: linear-gradient(135deg, #4bb8e4, #1578a4);
   }
   .icon-yellow {
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    background: linear-gradient(135deg, #f0c14a, #d4920a);
   }
   .icon-red {
-    background: linear-gradient(135deg, #f87171, #ef4444);
+    background: linear-gradient(135deg, #f07171, #d32f2f);
   }
   .icon-green {
-    background: linear-gradient(135deg, #4ade80, #22c55e);
+    background: linear-gradient(135deg, #9ad15a, #4e8a22);
   }
   .icon-orange {
-    background: linear-gradient(135deg, #fb923c, #f97316);
+    background: linear-gradient(135deg, #fb923c, #ea6a12);
   }
   .icon-indigo {
-    background: linear-gradient(135deg, #818cf8, #6366f1);
+    background: linear-gradient(135deg, #818cf8, #4f46e5);
   }
   .icon-slate {
     background: linear-gradient(135deg, #94a3b8, #64748b);
   }
   .portal-wash {
-    background: linear-gradient(135deg, #f0fdfa 0%, #e6fffa 40%, #f0fdf4 100%);
+    background:
+      radial-gradient(ellipse at 100% 0%, #f6d4f1 0%, transparent 42%),
+      #fcf9f5;
   }
   .portal-banner {
-    background: linear-gradient(135deg, #0d9488, #0891b2);
+    background: linear-gradient(135deg, #2d1636, #9b188f);
   }
   .portal-cta {
-    background: linear-gradient(135deg, #0d9488, #0891b2);
+    background: #9b188f;
   }
   .stat-grad-blue {
-    background: linear-gradient(to bottom right, #3b82f6, #06b6d4);
+    background: linear-gradient(135deg, #2aa6d8, #1578a4);
   }
   .stat-grad-purple {
-    background: linear-gradient(to bottom right, #a855f7, #8b5cf6);
+    background: linear-gradient(135deg, #c43aa3, #9b188f);
   }
   .stat-grad-teal {
-    background: linear-gradient(to bottom right, #14b8a6, #06b6d4);
+    background: linear-gradient(135deg, #8fc94a, #3f7a1c);
   }
   .date-chip {
-    background: #eff6ff;
-    border-color: #dbeafe;
-    color: #1d4ed8;
+    background: #e7f6fc;
+    border-color: #c5e8f6;
+    color: #1578a4;
   }
   .portal-tabs-sticky {
     top: 4.5rem;
